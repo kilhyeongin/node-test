@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>대전 · 충청 허니문특가전</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./common.js" defer></script>
+
+    <!-- Vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Noto Sans 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Gelasio 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- 데이터 폼 관련 -->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/fdf785a2ad.js" crossorigin="anonymous"></script>
+
+    <!-- sweetAlert 사용 해보기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+
+
+    
+    <!--  --------------- 필수 태그 ------------------- -->
+    <!-- <meta name="description" content="전문가 초청으로 믿을 수 있는 특가전으로 합리적인 허니문 특가전">
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="허니문 특가전">
+    <meta property="og:title" content="허니문 특가전">
+    <meta property="og:description" content="전문가 초청으로 믿을 수 있는 특가전으로 합리적인 허니문 특가전">
+    <meta property="og:url" content="https://planittourdaejeon.co.kr/">
+    <meta property="og:image" content="https://planittourdaejeon.co.kr/img/main.jpg">
+    <meta name="keywords" content="신혼여행 허니문 대전결혼식장 대전신혼여행 대전여행사 발리 하와이 카오락 후아힌 방콕 유럽 몰디브 칸쿤">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="허니문 특가전">
+    <meta name="twitter:description" content="전문가 초청으로 믿을 수 있는 특가전으로 합리적인 허니문 특가전">
+    <meta name="twitter:url" content="https://planittourdaejeon.co.kr/">
+    <meta name="twitter:image" content="https://planittourdaejeon.co.kr/img/main.jpg"> -->
+    <!-- ------------------------------------------------------------------------ -->
+
+
+
+
+</head>
+<body>
+    <div class="pc">
+        <div class="pc-content">
+            <h2><strong>전문가 초청</strong>으로 믿을 수 있는</h2>
+            <h2><strong>특가전</strong>으로 합리적인</h2>
+            <h1>허니문 특가전</h1>
+            <div class="ticket"><img src="./img/ticket.png" alt="티켓"><a href="#form"></a></div>
+            <div class="pc-btn">
+                <button>
+                    <img src="./img/btn-icon.png" alt="">
+                    <p>참가신청하기</p>
+                </button>
+                <a href="#form"></a>
+            </div>
+            <div class="various-btn">
+                <ul>
+                    <li><p>여행후기</p><a href="#review"></a></li>
+                    <li><p>사은품 혜택</p><a href="#benefit"></a></li>
+                    <li><p>발리</p><a href="#bali"></a></li>
+                    <li><p>하와이</p><a href="#hawaii"></a></li>
+                    <li><p>카오락</p><a href="#khaolak"></a></li>
+                    <li><p>후아힌/방콕</p><a href="#huahin"></a></li>
+                    <li><p>유럽</p><a href="#europe"></a></li>
+                    <li><p>몰디브</p><a href="#maldives"></a></li>
+                    <li><p>칸쿤</p><a href="#cancun"></a></li>
+                    <li><p>오시는 길</p><a href="#map"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <!--1번 메인 영상 -->
+        <section class="video">
+            <img src="./img/video-bg.jpg" alt="배경">
+            <div class="phone">
+                <img class="phoneimg" src="./img/phone.png" alt="핸드폰">
+                <!-- <img class="phoneimg-top" src="./img/phone-top.png" alt="핸드폰카메라"> -->
+                <div>
+                    <iframe class="video-iframe" src="https://player.vimeo.com/video/939444487?&background=1&title=0&amp;player_id=0&amp;app_id=58479" width="3840" height="2160" frameborder="0" allow="fullscreen; picture-in-picture; clipboard-write" title="planittour"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--2번 후기 -->
+        <section class="m-fair" id="review">
+            <div class="rivew-bg"><img src="./img/rivew-bg.jpg" alt="배경"></div>
+            <div class="main_swiper">
+                <div class="swiper rivew-slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="travel-destination"><img src="./img/bali.jpeg" alt="발리"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="travel-destination hawaii-img"><img src="./img/hawaii.jpeg" alt="하와이"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="travel-destination"><img src="./img/khaolak.jpeg" alt="카오락"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="travel-destination europe-img"><img src="./img/europe.jpeg" alt="유럽"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="travel-destination maldives-img"><img src="./img/maldives.jpeg" alt="몰디브"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_swiper">
+                <div class="rivew-memo"><img src="./img/review-memo.png" alt="메모지"></div>
+                <div class="swiper sub-mySwiper">
+                    <ul class="swiper-wrapper">
+                        <!-- 발리 여행후기 -->
+                        <li class="swiper-slide bali">
+                            <h2>발리 여행후기</h2>
+                            <div>
+                                <p>
+                                    처음으로 패키지여행했는데 플래닛투어에서 친절한 상담과<br>
+                                    저희가 원하는 느낌대로 골라주셔서<br>
+                                    핫한 곳들 다 다녀왔습니다^^!<br>
+                                    일찍 비행기랑 신행을 예약했는데도 친절하게 알려주시고<br>
+                                    잘 모르는 저희 부부에게 세세하게 설명 도와주셨어요👍<br>
+                                    발리에 도착해서도 친절한 수르야님 만나서<br>
+                                    즐겁게 관광하였습니다~!<br>
+                                    센스 있는 우리 가이드님 사진 실력에 감탄했어요!!!
+                                </p>
+                                <p>
+                                    플래닛투어 다음에도 이용하고싶구 지인분들<br>
+                                    추천하고 싶습니다^^👍<br>
+                                    덕분에 좋은 곳들 많이 다니고 즐거운 신행이었습니다
+                                </p>
+                                <p>양*지 고객님</p>
+                            </div>
+                        </li>
+                        <!-- 하와이 여행후기 -->
+                        <li class="swiper-slide hawaii">
+                            <h2>하와이 여행후기</h2>
+                            <div>
+                                <p>
+                                    저희는 고민 끝 신혼여행지를 하와이로 정했고, 여행 업체 중에<br>
+                                    플래닛투어가 제일 조건이 좋고 친절해서 선택을 하였습니다.
+                                </p>
+                                <p>
+                                    모든 체험이 재밌었지만,<br>
+                                    제일 기억에 남는거 UTV체험이었습니다.<br>
+                                    쥬라기 공원 영화 촬영지라 기대하고 갔는데 정말 멋진 풍경에<br>
+                                    안내 가이드 외국인분께서 재밌게 이끌어주셔서<br>
+                                    진짜 진짜 재밌었어요!! 완전 강추입니다<br>
+                                    하와이 가면 무조건 체험하세요~~~~~!!!!
+                                </p>
+                                <p>
+                                    여행을 잘 진행되고 마무리될 수 있었던 것은 <br>
+                                    플래닛투어 덕분입니다.<br>
+                                    현지에서는 정한나실장님!<br>
+                                    플래닛투어, 정한나 실장님 다시 한번 감사드립니다.
+                                </p>
+                                <p>김*주 고객님</p>
+                            </div>
+                        </li>
+                        <!-- 카오락 여행후기 -->
+                        <li class="swiper-slide">
+                            <h2>카오락 여행후기</h2>
+                            <div>
+                                <p>
+                                    신혼 여행지를 정할 때 처음 들어본 카오락,<br>
+                                    최근 신혼 여행지로 뜨고 있다는 이야기<br>
+                                    휴양을 원하는 사람들에게는 적극 추천하신다는<br>
+                                    플래닛투어 이용재 이사님의 말씀에<br>
+                                    믿고 가보기로 결정했었는데요<br>
+                                    너무 너무 잘 한 선택이였던것 같아요 ~!ㅎㅎ<br>
+                                    너무 만족스러운 여행이였습니다!
+                                </p>
+                                <p>
+                                    좋은 여행 될 수 있도록 첫 상담부터 마지막까지<br>
+                                    신경 써 주신 플래닛투어 이용재이사님께도<br>
+                                    너무 너무 감사드립니다~!!
+                                </p>
+                                <p>김*별 고객님</p>
+                            </div>
+                        </li>
+                        <!-- 유럽 여행후기 -->
+                        <li class="swiper-slide">
+                            <h2>유럽 여행후기</h2>
+                            <div>
+                                <p>
+                                    상담하러 갔을 때  휴양과 관광을 원한다고 했더니<br>
+                                    스페인을 추천해 주셨어요~<br>
+                                    처음엔 스위스를 생각하고 상담을 했는데<br>
+                                    추천해 주신 스페인을 다녀오길 잘한 거  같아요ㅎㅎ<br>
+                                    유럽 여행은 처음이고 오랜만에 해외여행이라 여행 전에<br>
+                                    궁금한 것들이 있으면 플래닛  투어에  전화해서 물어봤었는데<br>
+                                    매번 친절히 알려주시더라고요!<br>
+                                    덕분에 신혼여행 준비도 잘하고 스페인에 안전히 도착했습니다.
+                                </p>
+                                <p>
+                                    섬 가이드님도 정말 친절하시고, 가우디 투어 가이드님도<br>
+                                    자세하게 설명해주시고 사진도 열정적으로 찍어주셔서<br>
+                                    여러 인생샷 건졌습니다~^^
+                                </p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <!-- 몰디브 여행후기 -->
+                        <li class="swiper-slide">
+                            <h2>몰디브 여행후기</h2>
+                            <div>
+                                <p>
+                                    신혼여행은 고전적으로 몰디브 아니면 하와이의 로망이 있어서<br>
+                                    둘 중 고민하다 대전 플래닛투어를 방문해서 상담 받았구요 !<br>
+                                    중간에 요청한 자료와 수정이 꽤 있었음에도 친절하게<br>
+                                    상담해 주셔서 감사했고 덕분에 좋은 추억 만들어 왔습니당 🙌
+                                </p>
+                                <p>
+                                    다시 신행을 가라 해도 또 선택할 몰디브🏝️💚<br>
+                                    남편이랑 10년 뒤에 꼭 다시 오자며 약속했는데, 이뤄지길🙏
+                                </p>
+                                <p>김*수 고객님</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="m-fair-btn">
+                <button>
+                    <p>여행 상담 신청하기</p>
+                    <a href="#form"></a>
+                </button>
+            </div>
+        </section>
+
+        <!--3번 발리 혜택 -->
+        <section class="bali-benefit" id="bali">
+            <img src="./img/bali-benefit.jpg" alt="발리 혜택">
+            <a href="#form"></a>
+        </section>
+
+        <!--4번 카오락 혜택 -->
+        <section class="khaolak-benefit" id="khaolak">
+            <img src="./img/khaolak_benefit.jpg" alt="카오락혜택">
+            <div class="khaolak-fix">
+                <div class="swiper khaolak-slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><img src="./img/khaolak_review1.png" alt="카오락리뷰"></li>
+                        <li class="swiper-slide"><img src="./img/khaolak_review2.png" alt="카오락리뷰"></li>
+                        <li class="swiper-slide"><img src="./img/khaolak_review3.png" alt="카오락리뷰"></li>
+                        <li class="swiper-slide"><img src="./img/khaolak_review4.png" alt="카오락리뷰"></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#form"></a>
+        </section>
+
+        <div class="form-btn">
+            <img src="./img/form-btn.jpg" alt="버튼">
+            <div>
+                <a href="#map"></a>
+                <a href="#benefit"></a>
+            </div>
+        </div>
+        <!--5번 신청폼 -->
+        <section class="DB-form" id="form">
+            <div class="form-bg"><img src="./img/DB-bg.jpg" alt="배경"></div>
+            <div class="form-all">
+                <div class="pre-registration">
+                    <div>
+                        <p>사전등록 시 20만 원 추가할인</p>
+                    </div>
+                </div>
+                <div class="form-p">
+                    <p>허니문 특가전</p>
+                    <h1>참가 신청</h1>
+                </div>
+                <!-- 테스트용 -->
+                <!-- <form class="gform" action="https://script.google.com/macros/s/AKfycbylHDyU9L1PWPtXdLb7PEt-Bkc9XKRXTAxmnWPqXgnHiKDbQohwHtMvm8dP8E6Gs7aHUA/exec" method="POST" data-email="yaro2kil@naver.com" id="myForm" target="iframe-none" action="index1.html"> -->
+                <!-- 회사 (대전) -->
+                <form class="gform" action="https://script.google.com/macros/s/AKfycbx-yV1pRj5IOIXwoecUhyORj1g0o0PMRihOgJAIv8VX54QRhvcwfGXnMc_9MjcHMq5ypQ/exec" method="POST" data-email="planittour@naver.com" id="myForm" target="iframe-none" action="index1.html">
+                    <input class="hg_input" type="text" id="userName" onkeyup="chk_han('userName')" name="이름" maxlength="6" placeholder="이름">
+                    <input type="text" name="" required style="display: none;">
+                    <input class="hg_input" type="tel" id="usernumber" name="전화번호" placeholder="전화번호" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" maxlength="13">
+                    <input class="hg_input" type="text" id="userCity" name="거주지역" placeholder="거주 지역">
+                    <div class="box-input1">
+                        <div class="gender-girl on">
+                            <div>
+                                <img src="./img/bride.png" alt="신부아이콘">
+                                <p>신부</p>
+                            </div>
+                            <input type="radio" name="성별" value="신부" id="usergender" checked></input>
+                        </div>
+                        <div class="gender-man">
+                            <div>
+                                <img src="./img/groom.png" alt="신랑아이콘">
+                                <p>신랑</p>
+                            </div>
+                            <input type="radio" name="성별" value="신랑" id="usergender"></input>
+                        </div>
+                    </div>
+                    <div class="db-content">
+                        <input class="hg_input" value="" type="tel" name="예식날짜" id="usermessage" onKeyup="inputYMDNumber(this);" placeholder="예식날짜 2025-01-01" maxlength="10"></input>
+                        <label><input type="checkbox" value="미정" id="undetermined" name="예식유무"><label for="undetermined"></label><p>미정</p></label>
+                    </div>
+                    <input class="hg_input" value="" type="text" name="희망 신혼여행 지역" id="userlocal" placeholder="희망 신혼여행 지역"></input>
+                    <div class="box-input4">
+                        <select class="hg_input wd_input" value="" name="방문일자" id="path" onchange="CheckText()">
+                            <option selected disabled value="">방문일자 선택</option>
+                            <option value="11월 09일(토)">11월 09일(토)</option>
+                            <option value="11월 10일(일)">11월 10일(일)</option>
+                        </select>
+                    </div>
+                    <input type="text" style="display: none;" name="유입경로" id="previous-page" value="" readonly>
+                    <input type="text" style="display: none;" name="키워드" id="searchKeyword" value="" readonly>
+                    <div class="information">
+                        <div class="agree">
+                            <label>
+                                <input type="checkbox" id="useragree" name="개인정보보호" value="동의" checked required>
+                                <label for="useragree"></label>
+                                <p>개인정보 수집 및 동의 <strong>*</strong></p>
+                            </label>
+                            <button type="button" class="click_me">
+                                <p>개인정보 취급방침 보기 ></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="privacy-box">
+                        <p>
+                            1. 개인정보의 수집 목적<br>
+                            플래닛투어(이하 '회사'라 함)는 최소한의 개인정보를 수집하고 있으며,<br>
+                            수집한 개인정보를 상담, 요청사항 처리 등의 목적을 위해 활용합니다.<br>
+                            <br>
+                            - 특가전 참석자 관리, 특가전 안내, 이벤트 서비스 이용에 따른 본인 확인, 경품 배송 및 발송관련 사항, 이벤트, 각종 허니문서비스 정보 제공등 홍보성 정보 전달.<br>
+                            <br>
+                            - 제공받는자 : 플래닛투어
+                            <br>
+                            <br>
+                            2. 수집하는 개인정보 항목<br>
+                            사이트에서 서비스 이용 과정에서 이용자가 개인정보 수집에 대해 동의를 하고 직접 정보를 입력하는 경우, 해당 개인정보를 수집합니다.<br>
+                            - 수집 항목: 이름, 성별, 연락처, 거주지, 결혼 예정일<br>
+                            <br>
+                            3. 수집하는 개인정보의 처리 및 보존 기간<br>
+                            회사는 원칙적으로 개인정보 수집 및 이용 목적을 달성한 후에는<br>
+                            해당 정보를 지체 없이 파기합니다.<br>
+                            단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br>
+                            <br>
+                            - 보존 항목 : 이름, 성별, 연락처, 거주지, 결혼 예정일<br>
+                            - 보존 근거 : 고객 문의 관리<br>
+                            - 보존 기간 : 1년 (단, 관계 법령의 규정에 의하여 보존할 필요가 있는 경우<br>
+                            회사는 ‘전자상거래 등에서의 소비자 보호에 관한 법률’에서 정한<br>
+                            일정 기간 동안 회원정보를 보관함)<br>
+                            박람회 참가 및 문의 신청 기록 : 1년<br>
+                            이용자에게 동의 받은 개인정보 보유기간의 도래와 같이 개인정보의 수집 및 이용목적이 달성된 개인정보는 재생이 불가능한 방법으로 파기하고 있습니다.<br>
+                            법령에서 보존 의무를 부과한 정보에 대해서도 해당 기간 경과 후 지체 없이 재생이 불가능한 방법으로 파기합니다.<br>
+                            <br>
+                            4. 동의 거부 권리 및 동의 거부 시 불이익<br>
+                            고객은 본 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다.<br>
+                            단, 동의 거부 시 서비스 이용에 제한이 있을 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="box-input box-input2">
+                        <button id="submitBtn" type="submit" class="btn-send">참가 신청하기</button>
+                    </div>
+                </form>
+                <iframe id="iframe-none" name="iframe-none" style="display:none"></iframe>
+            </div>
+        </section>
+
+        <!--6번 하와이 혜택 -->
+        <section class="hawaii-benefit" id="hawaii">
+            <img src="./img/hawaii_benefit.jpg" alt="하와이혜택">
+            <a href="#form"></a>
+        </section>
+
+        <!--7,8번 유럽/몰디브 혜택 -->
+        <section class="europe-benefit" id="europe">
+            <img src="./img/europe-benefit.jpg" alt="유럽 혜택">
+            <div class="maldives" id="maldives"></div>
+            <a class="europe-a" href="#form"></a>
+            <a class="maldives-a" href="#form"></a>
+        </section>
+
+        <!--9번 칸쿤 혜택 -->
+        <section class="cancun-benefit" id="cancun">
+            <img src="./img/cancun-benefit.jpg" alt="칸쿤혜택">
+            <a href="#form"></a>
+        </section>
+
+        <!--10번 후아힌/방콕 혜택 -->
+        <section class="huahin-benefit" id="huahin">
+            <img src="./img/huahin-benefit.jpg" alt="후아힌 혜택">
+            <a href="#form"></a>
+        </section>
+
+        <!--11번 허니문 특가전 한정 -->
+        <section class="product-page">
+            <div class="product-img">
+                <img src="./img/productpage-bg.jpg" alt="상품소개 배경">
+                <div class="product-slide swiper product-swiper">
+                    <ul class="swiper-wrapper">
+                        <!-- 발리 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>BALI</p>
+                                <img src="./img/product-bali.png" alt="발리">
+                            </div>
+                            <h2>발리&nbsp;<strong>210만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 하와이 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>HAWAII</p>
+                                <img src="./img/product-hawaii.png" alt="하와이">
+                            </div>
+                            <h2>하와이&nbsp;<strong> 280만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 유럽 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>EUROPE</p>
+                                <img src="./img/product-praha.png" alt="유럽">
+                            </div>
+                            <h2>유럽&nbsp;<strong> 260만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 푸켓 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>PHUKET</p>
+                                <img src="./img/product-phuket.png" alt="푸켓">
+                            </div>
+                            <h2>푸켓&nbsp;<strong> 147만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 카오락 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>KHAO LAK</p>
+                                <img src="./img/product-similan.png" alt="카오락">
+                            </div>
+                            <h2>카오락&nbsp;<strong> 190만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 괌 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>GUAM</p>
+                                <img src="./img/product-guam.png" alt="괌">
+                            </div>
+                            <h2>괌&nbsp;<strong> 138만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 사이판 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>SAIPAN</p>
+                                <img src="./img/product-saipan.png" alt="사이판">
+                            </div>
+                            <h2>사이판&nbsp;<strong> 138만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 푸꾸옥 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>PHUQUOC</p>
+                                <img src="./img/product-phuquoc.png" alt="푸꾸옥">
+                            </div>
+                            <h2>푸꾸옥&nbsp;<strong> 157만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 후아힌 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>HUA HIN</p>
+                                <img src="./img/product-huahin.png" alt="후아힌">
+                            </div>
+                            <h2>후아힌&nbsp;<strong>195만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 코사멧 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>KOH SAMET</p>
+                                <img src="./img/product-kosamet.png" alt="코사멧">
+                            </div>
+                            <h2>코사멧&nbsp;<strong>172만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 칸쿤 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>CANCUN</p>
+                                <img src="./img/product-cancun.png" alt="칸쿤">
+                            </div>
+                            <h2>칸쿤&nbsp;<strong>310만 원</strong> <span>~</span></h2>
+                        </li>
+                        <!-- 몰디브 -->
+                        <li class="swiper-slide">
+                            <div class="special-price">
+                                <p>MALDIVES</p>
+                                <img src="./img/product-maldives.png" alt="몰디브">
+                            </div>
+                            <h2>몰디브&nbsp;<strong>350만 원</strong> <span>~</span></h2>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--12번 방문 혜택 -->
+        <section class="benefit" id="benefit">
+            <img src="./img/benefits.jpg" alt="방문혜택">
+            <a href="#form"></a>
+        </section>
+
+        <!--13번 오시는 길 -->
+        <section class="map" id="map">
+            <img src="./img/map.jpg" alt="지도">
+        </section>
+
+        <!-- 풋터 -->
+        <footer class="ft">
+            <h1>허니문 전문여행사 플래닛투어</h1>
+            <p>대표자 &nbsp;<strong>|</strong>&nbsp;&nbsp; 심규남</p>
+            <p>전화 &nbsp;<strong>|</strong>&nbsp;&nbsp; 1533-4073</p>
+            <p>주소 &nbsp;<strong>|</strong>&nbsp;&nbsp; 대전광역시 서구 계룡로 639 에이스침대 대전사옥 2층</p>
+            <p>사업자등록번호 &nbsp;<strong>|</strong>&nbsp;&nbsp; 305-28-17040</p>
+            <p>통신판매업신고 &nbsp;<strong>|</strong>&nbsp;&nbsp; 제 2023-대전서구-1621호</p>
+            <p>COPYRIGHT &COPY; PLANITTOUR CORP. ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var rivewswiper = new Swiper(".rivew-slide", {
+            loop : true,
+        });
+
+        var submySwiper = new Swiper(".sub-mySwiper", {
+            loop : true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect : 'fade', fadeEffect: { crossFade: true },
+
+        });
+
+        rivewswiper.controller.control = submySwiper;
+        submySwiper.controller.control = rivewswiper;
+
+
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".product-swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop : true,
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".khaolak-slide", {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+            loop : true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        // 성별 선택창
+        $(function () {
+            $('.gender-man').click(function () {
+                $(this).addClass('on')
+                $('.gender-girl').removeClass('on')
+                $('.gender-man>input').prop('checked', true);
+            })
+            $('.gender-girl').click(function () {
+                $(this).addClass('on')
+                $('.gender-man').removeClass('on')
+                $('.gender-girl>input').prop('checked', true);
+            })
+        })
+        $(function () {
+            $('.gender-man2').click(function () {
+                $(this).addClass('on')
+                $('.gender-girl2').removeClass('on')
+                $('.gender-man2>input').prop('checked', true);
+            })
+            $('.gender-girl2').click(function () {
+                $(this).addClass('on')
+                $('.gender-man2').removeClass('on')
+                $('.gender-girl2>input').prop('checked', true);
+            })
+        })
+
+        $(function(){
+            $('.click_me').click(function(){
+                $('.privacy-box').addClass('on')
+            })
+
+            $('.click_me2').click(function(){
+                $('.privacy-box2').addClass('on')
+            })
+        })
+    </script>
+
+
+
+
+</body>
+</html>

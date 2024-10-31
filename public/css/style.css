@@ -1,0 +1,1853 @@
+/* 하나손글씨 폰트 */
+@font-face {
+    font-family: 'Hana_handwriting';
+    src: url('./font/Hana_handwriting.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Noto Sans 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 더 잠실체 폰트 */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Noto Sans 폰트 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* Gelasio 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+    /* pc버전 */
+    .pc {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .pc-content {
+        position: absolute;
+        top: 36%;
+        left: 83.5%;
+        transform: translate(-83.5%,-36%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pc h2 {
+        color: #5d6371;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 26px;
+    }
+
+    .pc h2 strong {
+        font-weight: bold;
+    }
+
+    .pc h2:nth-of-type(2) {
+        margin-top: 10px;
+    }
+
+    .pc h1 {
+        color: #343d4e;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 55px;
+        margin-top: 20px;
+    }
+
+    .pc-content .ticket {
+        position: relative;
+        margin-top: 40px;
+        width: 350px;
+    }
+    
+    .pc-content .ticket a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pc-content .ticket img {
+        width: 100%;
+    }
+
+    .pc-content .pc-btn {
+        position: relative;
+        width: 170px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .pc-content .pc-btn button {
+        position: absolute;
+        left: 50%;
+        border: transparent;
+        display: flex;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: move-btn;
+        animation-duration: 6s;
+        animation-iteration-count : infinite;
+    }
+
+    @keyframes move-btn {
+        0% {
+            width: 40px;
+            left: 50%;
+        }
+        25% {
+            width: 40px;
+            left: 50%;
+        }
+        50% {
+            width: 170px;
+            left: 0%;
+        }
+        80% {
+            width: 170px;
+            left: 0%;
+        }
+        100% {
+            width: 40px;
+            left: 50%;
+        }
+    }
+
+    .pc-content .pc-btn button img {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 20px;
+        transform: translateY(-50%);
+    }
+
+    .pc-content .pc-btn button p {
+        position: absolute;
+        top: 45%;
+        left: 30px;
+        transform: translateY(-45%);
+        width: 80%;
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        opacity: 0;
+        animation-name: move-p;
+        animation-duration: 6s;
+        animation-iteration-count : infinite;
+    }
+
+    @keyframes move-p {
+        0% {
+            opacity: 0;
+        }
+        43% {
+            opacity: 0;
+        }
+        48% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    /* .pc-content .pc-btn button p {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-45%);
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        opacity: 0;
+        animation-duration: 3s;
+        animation-iteration-count : infinite;
+    } */
+
+    /* .pc-content .pc-btn button p:nth-of-type(1) {
+        left: 40px;
+        animation-name: move-p;
+    }
+    .pc-content .pc-btn button p:nth-of-type(2) {
+        left: 58px;
+        animation-name: move-p2;
+    }
+    .pc-content .pc-btn button p:nth-of-type(3) {
+        left: 76px;
+        animation-name: move-p3;
+    }
+    .pc-content .pc-btn button p:nth-of-type(4) {
+        left: 94px;
+        animation-name: move-p4;
+    }
+    .pc-content .pc-btn button p:nth-of-type(5) {
+        left: 112px;
+        animation-name: move-p5;
+    }
+    .pc-content .pc-btn button p:nth-of-type(6) {
+        left: 130px;
+        animation-name: move-p6;
+    }
+
+    @keyframes move-p {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 0;
+        }
+        11% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        76% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes move-p2 {
+        0% {
+            opacity: 0;
+        }
+        12% {
+            opacity: 0;
+        }
+        13% {
+            opacity: 1;
+        }
+        72% {
+            opacity: 1;
+        }
+        73% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes move-p3 {
+        0% {
+            opacity: 0;
+        }
+        14% {
+            opacity: 0;
+        }
+        15% {
+            opacity: 1;
+        }
+        67% {
+            opacity: 1;
+        }
+        68% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes move-p4 {
+        0% {
+            opacity: 0;
+        }
+        16% {
+            opacity: 0;
+        }
+        17% {
+            opacity: 1;
+        }
+        64% {
+            opacity: 1;
+        }
+        65% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes move-p5 {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 0;
+        }
+        21% {
+            opacity: 1;
+        }
+        61% {
+            opacity: 1;
+        }
+        62% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes move-p6 {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0;
+        }
+        26% {
+            opacity: 1;
+        }
+        56% {
+            opacity: 1;
+        }
+        57% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    } */
+
+    .pc-content .pc-btn a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .various-btn {
+        width: 300px;
+        margin-top: 60px;
+    }
+
+    .various-btn ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .various-btn ul li {
+        position: relative;
+        border: 2px solid #fdc379;
+        border-radius: 30px;
+        width: calc(100% / 2 - 10px);
+        margin-top: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .various-btn ul li p {
+        color: #f8aa46;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+    }
+
+    .various-btn ul li:hover {
+        border: 2px solid #e18003;
+        background-color: #f69d2a;
+    }
+    .various-btn ul li:hover p {
+        color: white;
+    }
+
+    .various-btn ul li a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+
+
+    /* 모바일 */
+
+    .main {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .main > img {
+        display: block;
+        width: 100%;
+    }
+    .main > div {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        height: 10.4%;
+    }
+
+    .main > div a {
+        width: 50%;
+    }
+
+
+    .news {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .news img {
+        display: block;
+        width: 100%;
+    }
+
+    /* 500px  */
+
+    /* 비디오 */
+    .video {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .video > img {
+        display: block;
+        width: 100%;
+    }
+
+    .video .phone {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%,-68%);
+        width: 80%;
+        overflow: hidden;
+    }
+    
+    .video .phone .phoneimg {
+        display: block;
+        width: 100%;
+    }
+
+    .video .phone .phoneimg-top {
+        display: block;
+        position: absolute;
+        width: 4%;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .video .phone > div {
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        width: 99%;
+        height: 94% !important;
+        z-index: -1;
+        overflow: hidden;
+        border-radius: 34px;
+    }
+
+    .video .phone > div .video-iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+
+
+
+
+    /* 소개페이지 */
+
+    .product-page {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .product-page .product-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .product-page .product-img > img {
+        display: block;
+        width: 100%;
+    }
+
+    .product-page .product-img .product-slide {
+        position: absolute;
+        top: 34%;
+        width: 100%;
+    }
+
+    .product-page .product-img .product-slide .swiper-pagination {
+        top: auto;
+        left: 50%;
+        bottom: 0px !important;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 3px !important;
+        background-color: #ebd9dd;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: #d5adb6 !important;
+    }
+
+    .product-page .product-img .product-slide ul {
+        width: 100%;
+    }
+
+    .product-page .product-img .product-slide ul li {
+        width: 100%;
+    }
+
+    .product-page .product-img .product-slide ul li .special-price {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .product-page .product-img .product-slide ul li .special-price img {
+        display: block;
+        width: 100%;
+    }
+
+    .product-page .product-img .product-slide ul li .special-price p {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px;
+        color: white;
+        font-family: "Gelasio", serif;
+        font-weight: 100;
+    }
+
+    .product-page .product-img .product-slide ul li h2 {
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 40px 0;
+        font-size: 28px;
+        font-weight: 500;
+        color: #3d3032;
+    }
+
+    .product-page .product-img .product-slide ul li h2 strong {
+        font-size: 34px;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+
+    .product-page .product-img .product-slide ul li h2 span {
+        font-family: 'TheJamsil5Bold';
+        margin-left: 5px;
+    }
+
+
+    /* 500px 여행후기 */
+    .m-fair {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        height: 1100px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .m-fair .rivew-bg {
+        position: relative;
+        width: 100%;
+    }
+
+    .m-fair .rivew-bg img {
+        position: absolute;
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .m-fair .rivew-slide {
+        position: absolute;
+        top: 19%;
+        width: 100%;
+    }
+
+    .m-fair .rivew-slide ul {
+        width: 100%;
+    }
+
+    .m-fair .rivew-slide ul li {
+        width: 100%;
+        height: 680px;
+    }
+
+    .m-fair .rivew-slide ul li .travel-destination {
+        position: relative;
+        width: 90%;
+        height: 280px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .m-fair .rivew-slide ul li .travel-destination img {
+        position: absolute;
+        top: 83%;
+        left: 50%;
+        transform: translate(-50%,-83%);
+        width: 500px;
+        display: block;
+    }
+
+    .m-fair .rivew-slide ul li .hawaii-img img {
+        top: 75% !important;
+        transform: translate(-50%,-75%) !important;
+    }
+
+    .m-fair .rivew-slide ul li .europe-img img {
+        left: 30%;
+        transform: translate(-30%,-83%);
+    }
+
+
+
+    
+    .m-fair .sub_swiper {
+        position: absolute;
+        top: 43%;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 115%;
+    }
+
+    .m-fair .rivew-memo {
+        width: 90%;
+        margin: auto;
+        z-index: -1;
+    }
+
+    .m-fair .rivew-memo img {
+        width: 100%;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul {
+        width: 100%;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li {
+        width: 100% ;
+        text-align: center;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li h2 {
+        font-family: 'Hana_handwriting';
+        font-size: 34px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .khaolak h2 {
+        font-size: 30px;
+        margin-top: 15px;
+    } 
+
+    .m-fair .sub_swiper .sub-mySwiper ul li > div {
+        margin-top: 40px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p {
+        font-family: 'Noto Sans KR', sans-serif;
+        /* font-size: 3vw; */
+        margin-top: 13px;
+        line-height: 20px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+    .sub_swiper .swiper-pagination-bullet {
+        background-color: #b7d5bd;
+        width: 14px;
+        border-radius: 17px;
+    }
+
+    .sub_swiper .swiper-pagination-bullet-active {
+        width: 26px;
+    }
+
+    .m-fair .m-fair-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        transform: translateX(-50%);
+        width: 220px;
+        height: 66px;
+        border-radius: 30px;
+        padding: .3rem;
+        background-color: #d8e3db;
+    }
+    .m-fair .m-fair-btn button {
+        border: transparent;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: #4db164;
+        box-shadow: 2px 1px 5px #959e96;
+    }
+    .m-fair .m-fair-btn button p {
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+    }
+    .m-fair .m-fair-btn button a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    /* 방문혜택 */
+    .benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .benefit img {
+        display: block;
+        width: 100%;
+    }
+
+    .benefit a {
+        position: absolute;
+        top: 90%;
+        left: 28%;
+        width: 44%;
+        height: 5.5%;
+    }
+
+    /* 혜택배너 */
+    .benefit-banner {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        margin-top: -22px;
+    }
+
+    .benefit-banner > img {
+        display: block;
+        width: 100%;
+    }
+
+    /* 발리 혜택 */
+    .bali-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .bali-benefit > img {
+        display: block;
+        width: 100%;
+    }
+
+    .bali-benefit a {
+        position: absolute;
+        top: 94%;
+        left: 30%;
+        width: 40%;
+        height: 3%;
+    }
+
+    /* 하와이 혜택 */
+    .hawaii-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .hawaii-benefit > img {
+        display: block;
+        width: 100%;
+    }
+
+    .hawaii-benefit a {
+        position: absolute;
+        top: 94.8%;
+        left: 29%;
+        width: 43%;
+        height: 2.7%;
+    }
+
+
+    /* 카오락 혜택 */
+    .khaolak-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .khaolak-benefit > img {
+        display: block;
+        width: 100%;
+    }
+
+
+    .khaolak-fix {
+        position: absolute;
+        top: 52%;
+        left: 5%;
+        width: 95%;
+    }
+
+    .khaolak-slide {
+        
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .khaolak-slide ul {
+        width: 100%;
+    }
+
+    .khaolak-slide ul li {
+        width: 100%;
+    }
+
+    .khaolak-slide ul li img {
+        width: 100%;
+    }
+
+    .khaolak-benefit a {
+        position: absolute;
+        top: 96.5%;
+        left: 27.5%;
+        width: 45%;
+        height: 1.7%;
+    }
+
+    /* 후아힌 혜택 */
+    .huahin-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .huahin-benefit img {
+        display: block;
+        width: 100%;
+    }
+
+    .huahin-benefit a {
+        position: absolute;
+        top: 89.5%;
+        left: 27%;
+        width: 47%;
+        height: 7%;
+    }
+
+    .europe-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .europe-benefit img {
+        display: block;
+        width: 100%;
+    }
+
+    .europe-benefit a {
+        position: absolute;
+        left: 27%;
+        width: 47%;
+    }
+
+    .europe-benefit .europe-a {
+        top: 47.2%;
+        height: 2.2%;
+    }
+
+    .europe-benefit .maldives-a {
+        top: 95.8%;
+        height: 2.3%;
+    }
+
+    .maldives {
+        position: absolute;
+        top: 50.5%;
+        left: 0;
+        width: 100%;
+    }
+
+
+    /* 칸쿤 혜택 */
+    .cancun-benefit {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .cancun-benefit img {
+        display: block;
+        width: 100%;
+    }
+
+    .cancun-benefit a {
+        position: absolute;
+        top: 94%;
+        left: 27%;
+        width: 46%;
+        height: 5%;
+    }
+
+
+    /* 지도 */
+    .map {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .map img {
+        display: block;
+        width: 100%;
+    }
+
+    /* DB 버튼 */
+
+    .form-btn {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .form-btn img {
+        display: block;
+        width: 100%;
+    }
+
+    .form-btn > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .form-btn > div a {
+        width: 50%;
+        height: 100%;
+    }
+
+
+
+
+    /* DB */
+    .DB-form {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        padding: 2rem 0 7rem 0;
+        overflow: hidden;
+    }
+
+    .form-bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 900px;
+        z-index: -1;
+    }
+
+    .form-bg > img {
+        width: 100%;
+    }
+
+    .gform {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        z-index: 12;
+    }
+
+    .pre-registration {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pre-registration > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #114377;
+        padding: 7px 16px;
+        border-radius: 20px;
+    }
+
+    .pre-registration > div p {
+        display: block;
+        color: #007dff;
+        font-size: 14px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 500;
+    }
+
+    .form-p {
+        text-align: center;
+        color: white;
+        font-family: "Noto Sans KR", sans-serif;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .form-p p {
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .form-p h1 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 14px;
+    }
+
+
+    .gform>div {
+        padding: 0.2rem 0;
+    }
+    
+    .gform>input {
+        width: 350px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        height: 40px;
+        font-size: 14px;
+        font-family: 'Noto Sans KR', sans-serif;
+        padding-left: 8px;
+        border-radius: 0px;
+    }
+
+    .gform>input::placeholder {
+        font-size: 14px;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .box-input1 {
+        display: flex;
+        width: 350px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    
+    
+    .gform .box-input .wd_input {
+        width: 350px;
+    }
+    
+    .gform .box-input4 .hg_input {
+        border-radius: 0px !important;
+        width: 350px;
+    }
+
+    .gform .box-input4 select option {
+        border-radius: 0px !important;
+    }
+    
+    .box-input button {
+        width: 350px;
+    }
+    
+    .date-path input,
+    .date-path select {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .box-input1 {
+        padding: 10px 0 20px 0 !important;
+    }
+    
+    .gender-man,
+    .gender-girl,
+    .gender-man2,
+    .gender-girl2 {
+        width: 170px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: rgba(140, 140, 140, 0.1);
+        cursor: pointer;
+    }
+
+    .gender-man div,
+    .gender-girl div,
+    .gender-man2 div,
+    .gender-girl2 div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gender-man div p,
+    .gender-girl div p,
+    .gender-man2 div p,
+    .gender-girl2 div p {
+        margin-left: 3px;
+        font-family: "Noto Sans KR", sans-serif;
+        color: white;
+    }
+
+    .gender-man div img,
+    .gender-girl div img,
+    .gender-man2 div img,
+    .gender-girl2 div img {
+        width: 18px;
+        display: block;
+    }
+
+    .gender-man.on,
+    .gender-girl.on,
+    .gender-man2.on,
+    .gender-girl2.on {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: #002f7f;
+    }
+
+    .gender-man input,
+    .gender-girl input,
+    .gender-man2 input,
+    .gender-girl2 input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: black;
+    }
+
+    .gender-man input[type='radio'],
+    .gender-girl input[type='radio'],
+    .gender-man2 input[type='radio'],
+    .gender-girl2 input[type='radio'] {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 3px;
+    }
+    
+    .gender-man input[type='radio']:checked,
+    .gender-girl input[type='radio']:checked,
+    .gender-man2 input[type='radio']:checked,
+    .gender-girl2 input[type='radio']:checked {
+        border: transparent;
+        background-color: white;
+        appearance: none;
+        width: 14px;
+        height: 14px;
+    }
+
+    .gender-man input[type='radio']:checked::before,
+    .gender-girl input[type='radio']:checked::before,
+    .gender-man2 input[type='radio']:checked::before,
+    .gender-girl2 input[type='radio']:checked::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 3px;
+        transform: rotate(35deg);
+        border: 0.5px solid #002f7f;
+        width: 2px;
+    }
+
+    .gender-man input[type='radio']:checked::after,
+    .gender-girl input[type='radio']:checked::after,
+    .gender-man2 input[type='radio']:checked::after,
+    .gender-girl2 input[type='radio']:checked::after {
+        content: "";
+        position: absolute;
+        top: 6.5px;
+        left: 4px;
+        transform: rotate(-60deg);
+        border: 0.5px solid #002f7f;
+        width: 6px;
+    }
+    
+    .box-input3 label,
+    .box-input4 label {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    
+    .box-input4 label span {
+        display: block;
+        padding: 1rem 0;
+        color: white;
+    }
+    
+    .gform .box-input .wd_input {
+        display: block;
+        width: 250px;
+        height: 30px;
+    }
+      
+    .gform .box-input4 .hg_input {
+        margin-top: 5px;
+        width: 350px;
+        height: 40px;
+        font-family: 'Noto Sans KR', sans-serif;
+        padding-left: 8px;
+    }
+
+    
+    .gform .box-input4 .hg_input option:disabled {
+        color: black;
+    }
+
+    .gform .box-input4 {
+        text-align: center;
+    }
+      
+    .gform .box-input4 span {
+        font-size: 16px;
+    }
+
+    .box-input2 {
+        display: flex;
+        justify-content: center;
+    }
+      
+    .box-input3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+      
+    .box-input3 label,
+    .box-input4 label {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .box-input {
+        display: flex;
+        align-items: center;
+    }
+      
+    .box-input button {
+        border: transparent;
+        border-radius: 30px;
+        background-color: #002f7f;
+        width: 300px;
+        height: 60px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .box-input2 button {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .db-content {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .db-content > input {
+        width: 280px;
+        height: 40px;    
+        padding-left: 8px;
+        border-radius: 0px;
+    }
+
+    .db-content > input::placeholder {
+        font-size: 14px;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .db-content > label {
+        display: flex;
+        align-items: center;
+    }
+
+    .db-content label input[type="checkbox"] {
+        display: none;
+    }
+
+    .db-content label input[type="checkbox"] + label {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border:1px solid #cacaca;
+        border-radius: 50%;
+    }
+
+    .db-content label input[id="undetermined"]:checked + label,
+    .db-content label input[id="undetermined2"]:checked + label {
+        background-color: #002f7f;
+    }
+
+    .db-content label input[id="undetermined"]:checked + label::after,
+    .db-content label input[id="undetermined2"]:checked + label::after {
+        content: "\f00c";
+        font-size: 10px;
+        position: absolute;
+        top:60%;
+        left: 55%;
+        transform: translate(-55%,-60%);
+        font-family: FontAwesome;
+        color: white;
+        
+    }
+
+    .db-content label p {
+        color: white;
+        margin-left: 5px;
+    }
+
+    .information {
+        width: 350px;
+    }
+      
+    .information .agree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        font-family: 'NanumSquare', sans-serif;
+    }
+      
+    .information .agree label {
+        display: flex;
+        align-items: center;
+        margin: 5px 0 2px 0;
+    }
+
+    .information .agree label input[type="checkbox"] {
+        display: none;
+    }
+
+    .information .agree label input[type="checkbox"] + label {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border:1px solid #cacaca;    
+    }
+
+    .information .agree label input[id="useragree"]:checked + label,
+    .information .agree label input[id="useragree2"]:checked + label {
+        background-color: #002f7f;
+    }
+
+    .information .agree label input[id="useragree"]:checked + label::after,
+    .information .agree label input[id="useragree2"]:checked + label::after {
+        content: "\f00c";
+        font-size: 10px;
+        position: absolute;
+        top:50%;
+        left: 55%;
+        transform: translate(-55%,-50%);
+        font-family: FontAwesome;
+        color: white;        
+    }
+      
+    .information .agree label p {
+        margin-left: 5px;
+        font-size: 16px;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: white;
+    }
+      
+    .agree button {
+        width: 200px;
+        height: 40px;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+        padding: 0;
+    }
+      
+    .agree button p {
+        display: flex;
+        font-size: 14px;
+        justify-content: end;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: white;
+    }
+      
+    .date-path strong {
+        color: coral;
+    }
+
+    .privacy-box,
+    .privacy-box2 {
+        position: relative !important;
+        width: 100%; 
+        top: auto;
+        left: auto;
+        transform: translate(0,0);
+        background-color: #fbfaf8;
+        box-sizing: border-box; 
+        width: 350px;
+        height: 100px; 
+        overflow-y: scroll; 
+        text-align: left;
+        margin-bottom: 20px;
+        display: none;
+    }
+    .privacy-box.on,
+    .privacy-box2.on {
+        display: block;
+    }
+
+    .privacy-box p,
+    .privacy-box2 p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 11px;
+        padding: 0 .5rem ;
+        line-height: 16px;
+    }
+
+
+
+
+
+
+    /* 풋터 */
+    .ft {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        padding: 2rem 0 2rem 3rem;
+        background-color: #303031;
+        color: #b0b0b0;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: lighter;
+    }
+
+    .ft h1 {
+        font-size: 18px;
+        color: #e2e2e2;
+    }
+
+    .ft p {
+        margin-top: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ft p strong {
+        font-size: 12px;
+    }
+
+    .ft p:nth-of-type(1) {
+        margin-top: 25px;
+    }
+
+
+    @media (max-width:1000px) {
+        .pc {
+            display: none;
+        }
+
+        .mobile {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 100%;
+        }
+
+
+    }
+
+
+
+@media (max-width:500px) {
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p {
+        font-size: 3.3vw;
+    }
+
+
+    .product-page .product-img .product-slide ul li .special-price p {
+        font-size: 7vw;
+    }
+
+
+    .product-page .product-img .product-slide ul li h2 {
+        font-size: 6vw;
+    }
+
+    .product-page .product-img .product-slide ul li h2 strong {
+        font-size: 6.3vw;
+    }
+}
+
+
+
+
+@media (max-width:450px) {
+
+    .DB-form {
+        padding: 2rem 0 9rem 0;
+    }
+
+    .m-fair {
+       height: 1025px;
+    }
+
+    .m-fair .rivew-bg img {
+        width: 460px;
+    }
+
+    .m-fair .sub_swiper {
+        top: 45%;
+    }
+    
+    .m-fair .sub_swiper .sub-mySwiper ul li h2 {
+        font-size: 30px;
+    }
+
+
+    .m-fair .sub_swiper .sub-mySwiper ul .khaolak h2 {
+        font-size: 26px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li > div {
+        margin-top: 30px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p {
+        margin-top: 10px; 
+        line-height: 20px;
+        font-size: 3.4vw;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .bali p {
+        line-height: 19px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .hawaii p {
+        margin-top: 8px;
+        line-height: 16px;
+    }
+
+    /* DB  */
+
+    .form-p p {
+        font-size: 19px;
+    }
+
+    .form-p h1 {
+        font-size: 46px;
+        margin-top: 10px;
+    }
+
+    .gender-man, 
+    .gender-girl,
+    .gender-man2, 
+    .gender-girl2 {
+        width: 145px;
+    }
+
+    .gform>input {
+        width: 300px;
+    }
+
+    .box-input1 {
+        width: 300px;
+    }
+
+    .gform .box-input .wd_input {
+        width: 300px;
+    }
+
+    .gform .box-input4 .hg_input {
+        width: 300px;
+    }
+
+    .box-input button {
+        width: 300px;
+    }
+
+    .gform .box-input4 .hg_input {
+        width: 300px;
+    }
+    .box-input button {
+        width: 250px;
+    }
+
+    .db-content {
+        width: 300px;
+    }
+
+    .db-content > input {
+        width: 230px;
+    }
+
+    .db-content label p {
+        font-size: 14px;
+    }
+
+    .db-content label input[type="checkbox"] + label {
+        width: 14px;
+        height: 14px;
+    }
+
+    .information {
+        width: 300px;
+    }
+
+    .information .agree div p {
+        font-size: 14px;
+    }
+
+    .agree button {
+        height: 30px;
+    }
+
+    .agree button p {
+        font-size: 12px;
+    }
+    .privacy-box {
+        width: 300px;
+    }
+    .privacy-box p {
+        padding: 0 0.5rem ;
+    }
+
+
+
+
+    .ft {
+        padding: 2rem 0 2rem 2rem;
+    }
+
+    .ft h1 {
+        font-size: 16px;
+    }
+
+    .ft p {
+        font-size: 12px;
+    }
+
+    .ft p strong {
+        font-size: 10px;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width:400px) {
+
+    .video .phone > div {
+        border-radius: 26px;
+        width: 99%;
+    }
+
+    .gform>input::placeholder {
+        font-size: 12px;
+    }
+    .db-content > input::placeholder {
+        font-size: 12px;
+    }
+    .gform .box-input4 .hg_input {
+        font-size: 12px;
+    }
+
+    .box-input button {
+        font-size: 14px;
+    }
+
+
+
+    .box-input4 label {
+        font-size: 12px;
+    }
+
+
+    .m-fair .rivew-bg img {
+        display: block;
+        width: 440px;
+    }
+
+    .m-fair .sub_swiper {
+        top: 46%;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li h2 {
+        margin-top: 8px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .khaolak h2 {
+        margin-top: 12px;
+        font-size: 22px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li > div {
+
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p {
+        margin-top: 10px;
+        line-height: 18px;
+        font-size: 3.4vw;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .bali p {
+        line-height: 17px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .hawaii p {
+        margin-top: 7px;
+        line-height: 16px;
+    }
+
+    .m-fair {
+        height: 960px;
+    }
+
+    .ft {
+        padding: 2rem 0 2rem 1rem;
+    }
+
+    .ft p {
+        font-size: 11px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width:380px) {
+
+    .m-fair .sub_swiper .sub-mySwiper ul li > div {
+        margin-top: 25px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul li p {
+        line-height: 17px;
+        margin-top: 8px;
+    }
+    .m-fair .sub_swiper .sub-mySwiper ul .hawaii p {
+        line-height: 15px;
+        margin-top: 7px;
+    }
+
+
+
+}
+
+@media (max-width:350px) {
+
+    .m-fair .sub_swiper .sub-mySwiper ul li > div {
+        margin-top: 20px;
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .bali p {
+
+    }
+
+    .m-fair .sub_swiper .sub-mySwiper ul .hawaii p {
+        line-height: 14px;
+        margin-top: 6px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
