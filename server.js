@@ -6,20 +6,15 @@ const Visit = require(path.join(__dirname, 'models', 'Visit')); // IP 저장 모
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-
 // Middleware 설정
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 // MongoDB 연결
-require('dotenv').config();
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB에 성공적으로 연결되었습니다.'))
     .catch((error) => console.error('MongoDB 연결 중 오류 발생:', error));
-
-
 
 // 프록시 신뢰 설정 (IP 추출을 위한 설정)
 app.set('trust proxy', true);
@@ -27,8 +22,10 @@ app.set('trust proxy', true);
 // 기본 라우트 - 방문자 IP 저장
 app.get('/', async (req, res) => {
     try {
-        const ipAddress = req.headers['x-forwarded-for']?.split(",")[0].trim() ||
-                  req.socket.remoteAddress;
+        // 수동으로 IP를 쿼리 매개변수로 입력받고, 없으면 자동 추출
+        const ipAddress = req.query.ip || 
+                          req.headers['x-forwarded-for']?.split(",")[0].trim() || 
+                          req.socket.remoteAddress;
 
         console.log(`Detected IP Address: ${ipAddress}`);
 
@@ -43,13 +40,7 @@ app.get('/', async (req, res) => {
     }
 });
 
-
 // 서버 시작
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-
-
-
-
