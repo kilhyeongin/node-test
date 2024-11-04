@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log('MongoDB URI:', process.env.MONGODB_URI);
+
 // MongoDB 연결
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB에 성공적으로 연결되었습니다.'))
