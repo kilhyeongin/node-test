@@ -27,24 +27,20 @@ app.set('trust proxy', true);
 // 기본 라우트 - 방문자 IP 저장
 app.get('/', async (req, res) => {
     try {
-        // IP 주소 추출 로직 간소화
-        const ipAddress = req.headers['x-forwarded-for']?.split(",")[0].trim() || 
-                          req.connection.remoteAddress || 
-                          req.socket.remoteAddress;
-        
-        // IP 주소 확인 로그
+        const ipAddress = req.headers['x-forwarded-for']?.split(",")[0].trim() ||
+                  req.socket.remoteAddress;
+
         console.log(`Detected IP Address: ${ipAddress}`);
 
-        // IP와 방문 시간 데이터 저장
         const visit = new Visit({ ip: ipAddress });
-        await visit.save();
+        const savedVisit = await visit.save();
+        console.log('방문자 IP 저장 완료:', savedVisit);
 
-        console.log(`방문자 IP: ${ipAddress} - 데이터베이스에 저장되었습니다.`);
+        res.sendFile(path.join(__dirname, 'public', 'index.html'));
     } catch (error) {
         console.error('IP 저장 중 오류 발생:', error);
+        res.status(500).send('서버에 문제가 발생했습니다.');
     }
-
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 
@@ -52,8 +48,6 @@ app.get('/', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-
 
 
 
